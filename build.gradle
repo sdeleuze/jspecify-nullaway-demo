@@ -20,9 +20,9 @@ java {
 tasks.withType(JavaCompile).configureEach {
 	options.errorprone {
 		disableAllChecks = true // Other error prone checks are disabled
-		option("NullAway:OnlyNullMarked", "true") // Enable nullness checks only in null-marked code
-		error("NullAway") // bump checks from warnings (default) to errors
-		option("NullAway:JSpecifyMode", "true") // https://github.com/uber/NullAway/wiki/JSpecify-Support
+		option('NullAway:OnlyNullMarked', 'true') // Enable nullness checks only in null-marked code
+		error('NullAway') // bump checks from warnings (default) to errors
+		option('NullAway:JSpecifyMode', 'true') // https://github.com/uber/NullAway/wiki/JSpecify-Support
 	}
 	// Keep a JDK 17 baseline
 	options.release = 17
