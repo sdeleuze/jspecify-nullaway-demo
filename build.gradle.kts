@@ -2,7 +2,7 @@ import net.ltgt.gradle.errorprone.errorprone
 
 plugins {
     id("java")
-    id("net.ltgt.errorprone") version "4.3.0" // https://github.com/tbroyer/gradle-errorprone-plugin
+    id("net.ltgt.errorprone") version "5.1.0" // https://github.com/tbroyer/gradle-errorprone-plugin
 }
 
 group = "org.example"
@@ -33,5 +33,5 @@ tasks.withType<JavaCompile> {
 dependencies {
     implementation("org.jspecify:jspecify:1.0.0") // https://jspecify.dev/
     errorprone("com.google.errorprone:error_prone_core:2.42.0") // https://github.com/google/error-prone
-    errorprone("com.uber.nullaway:nullaway:0.12.12") // https://github.com/uber/NullAway
+    errorprone("com.uber.nullaway:nullaway:0.13.2") // https://github.com/uber/NullAway
 }
