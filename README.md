@@ -1,2 +1,2 @@
-Sample Maven project showing [NullAway](https://github.com/uber/NullAway) configured with the JSpecify mode.
+Sample Maven project showing [NullAway](https://github.com/uber/NullAway) configured with the JSpecify mode via [nullability-maven-plugin](https://github.com/making/nullability-maven-plugin).
 A nullness issue is visible in IDEs with support for JSpecify or when running `./mvnw clean package`.
